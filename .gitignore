@@ -16,4 +16,5 @@
 
 # Custom
 .vscode
+dist
 installer.zip
