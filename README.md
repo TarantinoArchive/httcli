@@ -18,22 +18,9 @@ Tired of curl? Postman is too weighty? Or maybe you just want an easy tool to te
 - Totally written in Go
 
 ## Installation
-**LINUX**
+Download the corresponding httcli binary for your system from [the releases](https://github.com/GianlucaTarantino/httcli/releases) (the one without extension for Linux, the .exe one for Windows) and put it in a directory included in your system PATH variable (for Linux it usually is /usr/share/bin, for Windows C:/Windows/system32)
 
-Download the zip in the releases ([this](https://github.com/GianlucaTarantino/httcli/releases/download/v1.0.0/installer.zip), but always check if there is a newer zip).
-Extract it, and in the folder where you extracted the zip, run this command
-```bash 
-sudo sh ./install.sh
-```
-*If this doesn't work, follow the instruction in info.txt, or just contact me*
-
-**WINDOWS**
-
-On Windows you need to compile the project, so you will need the Go compiler (or wait until the developer releases an exe for this. Will happen pretty soon, don't worry). Download the repository, go in the repository directory and, with the terminal, give this command
-```batch
-go build -o ./httcli.exe ./src/main.go
-```
-Then just move the just created exe to a folder included in the PATH environmental variable.
+Or, if you have the Go compiler, just download this repository and run, in this repository root directory, `go install ./src/httcli.go`. This should be valid for all Operating Systems.
 
 ## Usage
 Simply write `httcli` in terminal to start the CLI.
